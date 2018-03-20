@@ -29,6 +29,7 @@ module.exports = opts => {
 	}
 
 	conf.addFile(conf.get('globalconfig'), 'global');
+	conf.loadBuiltin();
 	conf.loadUser();
 
 	const caFile = conf.get('cafile');
